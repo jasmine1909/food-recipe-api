@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+}
+.meal-wrapper {
+  max-width: 90vw;
+  margin: 5rem auto;
+  text-align: center;
+}
+.meal-search-box {
+  display: flex;
+  align-items: stretch;
+  width: 50%;
+  margin: 2rem auto;
+}
+.search-control,
+.search-btn {
+  width: 100%;
+}
+.search-control {
+  outline: 0;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: 1px solid grey;
+  padding: 0.3rem 1rem;
+  border-right: none;
+}
+.search-btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(238, 43, 76);
+  border: 1px solid rgb(209, 55, 55);
+  color: white;
+  font-size: 1.3rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.meal-result {
+  margin-top: 3rem;
+}
+
+.meal-item {
+  border-radius: 1rem;
+  box-shadow: 0px 4px 21px -12px rgba(0, 0, 0, 0.79);
+  overflow: hidden;
+  margin: 2rem;
+}
+.meal-name {
+  margin: 2rem;
+}
+.meal-name h3 {
+  margin: 1rem;
+}
+.recipe-btn {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(238, 43, 76);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+}
+.recipe-btn:hover {
+  background-color: rgb(235, 8, 46);
+}
+.meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(238, 43, 76);
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  padding: 2rem;
+  display: none;
+}
+.meal-details::-webkit-scrollbar {
+  width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.showRecipe {
+  display: block;
+}
+.meal-details-content {
+  margin: 2rem;
+}
+.recipe-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.recipe-close-btn:hover {
+  opacity: 0.6;
+}
+.recipe-category {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100px;
+  margin: 0 auto;
+
+  background-color: white;
+  color: palevioletred;
+}
+.recipe-meal-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+.recipe-link a {
+  font-weight: 800;
+  color: white;
+}
+.notFound {
+  grid-template-columns: 1fr!;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(231, 58, 66);
+}
+
+@media screen and (min-width: 768px) {
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem;
+  }
+}
